@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Rodrigo Vianna\source\repos\bluemodas.Api\bluemodas\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Rodrigo Vianna\source\repos\bluemodas.Api\bluemodas\obj\Release\net5.0\PubTmp\EFSQLScripts\bluemodas.Data.AppDbContext.sql" />
+</sitemanifest>

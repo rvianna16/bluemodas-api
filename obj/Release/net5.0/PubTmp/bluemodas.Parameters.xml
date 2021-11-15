@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="bluemodas20211114194147" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Rodrigo\ Vianna\\source\\repos\\bluemodas\.Api\\bluemodas\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="bluemodas.Data.AppDbContext" description="" value="Data Source=tcp:bluemodasdbserver.database.windows.net,1433;Initial Catalog=bluemodas_db;User Id=bluemodas@bluemodasdbserver;Password=140599Xx" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Rodrigo\ Vianna\\source\\repos\\bluemodas\.Api\\bluemodas\\obj\\Release\\net5\.0\\PubTmp\\EFSQLScripts\\bluemodas\.Data\.AppDbContext\.sql$" />
+  </parameter>
+</parameters>

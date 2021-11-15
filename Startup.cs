@@ -39,6 +39,7 @@ namespace bluemodas
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "bluemodas", Version = "v1" });
             });
 
+            
             services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("ServerConnection")));
 
         }
@@ -48,14 +49,18 @@ namespace bluemodas
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "bluemodas v1"));
+                
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "bluemodas v1"));
 
             app.UseCors(x => x
               .AllowAnyOrigin()
               .AllowAnyMethod()
               .AllowAnyHeader());
+
+           
 
 
             app.UseAuthentication();
